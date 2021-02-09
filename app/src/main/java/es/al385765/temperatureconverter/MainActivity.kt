@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             return
         }
         val celsius = (fahrenheit - 32) / 180 *100
-        changeText(celsiusEditText, "%.2f".format(celsius.toString()))
+        changeText(celsiusEditText, "%.2f".format(celsius))
     }
 
     private fun onCelsiusChanged(str: String) {
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
             return
         }
         val fahrenheit = 32 + celsius / 100 *  180
-        changeText(fahrenheitEditText, "%.2f".format(fahrenheit.toString()))
+        changeText(fahrenheitEditText, "%.2f".format(fahrenheit))
     }
 }
 
